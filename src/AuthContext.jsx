@@ -1,8 +1,6 @@
 import { createContext, useState } from "react";
 import { useContext } from "react";
-export const AuthContext = createContext(); //Step1 - Creating a AuthContext
-
-//step2 - creating a provider
+export const AuthContext = createContext(); 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [username, setUsername] = useState("");
